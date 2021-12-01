@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 
+@font-face {
+    font-family: "Font External";
+    src: url('../font/iCiel\ Alina.otf');
+} */
+
+@font-face {
+    font-family: "Font External";
+    src: url('../font/Playball-Regular.ttf');
+}
+
+
+body {
+    background-color: rgb(3, 3, 3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.profile img {
+    max-width: 800px;
+    left: 50%;
+}
+
+.profile::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 364px;
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(3, 3, 3), rgba(3, 3, 3, 0.993), rgba(190, 178, 138, 0.322), rgba(0, 0, 0, 0));
+}
+
+/* INFO PANEL */
+.container .info-panel {
+    height: 90px;
+    width: 370px;
+    background-color: #f4f4f4;
+    margin: 30px 8px 20px;
+    border-radius: 15px;
+    border: 6px solid rgb(36, 30, 30);
+}
+
+.container .info-panel .active {
+    font-weight: 700;
+}
+
+.container .info-panel .home {
+    margin-left: 10px !important;
+}
+.container .info-panel .info {
+    font-size: 12.5px;
+    color: rgb(49, 49, 49);
+}
+.container .info-panel .logo {
+    font-size: 30px;
+    color: rgb(3, 3, 3);
+}
+
+/* Title Name */
+.container .title {
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    font-family: "Font External";
+    color: white;
+    text-shadow: 0 1px 2px #665f47;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 7px;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.3s;
+}
+
+.container .title:hover {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.container .sub-title {
+    font-family: "Font External";
+    color: white;
+    text-shadow: 0 1px 1px #C0B283;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 43px 0 30px;
+}
+
+.container .date {
+    font-family: "Font External";
+    color: white;
+    text-shadow: 0 1px 1px #C0B283;
+    font-size: 16.5px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.button-date {
+    font-family: "Font External";
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    transition: 0.5s;
+}
+
+.button-date:hover {
+    color: rgb(3, 3, 3);
+    border-radius: 14px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.date-time {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.date-time span {
+    height: 40px;
+    width: 75px;
+    margin: 4px;
+    font-size: 11px;
+    border-radius: 9px;
+}
+
+.date-time h6 {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+/* MEMPELAI */
+section {
+    height: 1090px;
+}
+
+section .card .judul {
+    font-family: "Font External";
+    font-style: italic;
+    font-size: 21px;
+    letter-spacing: 6px;
+}
+
+#mempelai .name {
+    font-family: "Font External";
+    font-size: 38px;
+    letter-spacing: 5px;
+}
+
+.quote {
+    height: 170px;
+    width: 100%;
+    background: rgb(27, 24, 19);
+}
+
+.quote p {
+    font-size: 14px;
+}
+
+#acara .acara {
+    background-image: url(../image/with_border.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    margin-top: 30px;
+    border: 3px solid whitesmoke;
+}
+
+#acara .acara .judul {
+    font-family: "Font External";
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.maps {
+    height: 300px;
+    width: 100%;
+}
+
+/* GALLERY//////////////// */
+.gallery {
+    height: 500px;
+    background-color: rgba(27, 24, 19, 0.568);
+    border-radius: 12px;
+}
+
+.gallery .heading {
+    font-family: "Font External";
+    font-style: italic;
+    font-size: 46px;
+    letter-spacing: 5px;
+    padding: 30px 0 0;
+}
+
+.gallery .heading-foto {
+    width: 600px;
+    height: 350px;
+    margin: 10px auto;
+    background-color: rgba(105, 89, 89, 0);
+    border: 5px solid rgb(26, 23, 23);
+    border-radius: 12px;
+    overflow: auto;
+    overflow: hidden;
+}
+
+.gallery .sliders {
+    width: 500%;
+    height: 550px;
+    margin: 0 0 0 10px;
+    display: flex;
+}
+
+.gallery .sliders input {
+    display: none;
+}
+
+.gallery .slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.gallery .slide img {
+    width: 300px;
+    margin: 13px 10px 0 -5px;
+    border-radius: 12px;
+}
+
+/* CSS FOR MANUAL SLIDER */
+.navigation-manual {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    margin-top: -195px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(26, 25, 25);
+    box-shadow: 0 -1px 2px whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background: rgb(26, 25, 25);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+#radio6:checked ~ .first {
+    margin-left: -100%;
+}
+
+/* CSS FOR MANUAL SLIDER */
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    justify-content: center;
+    margin-top: 353px;
+}
+
+.navigation-auto div {
+    border: 2px solid rgb(248, 246, 242);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: rgb(3, 3, 3);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: rgb(3, 3, 3);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: rgb(3, 3, 3);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: rgb(3, 3, 3);
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background: rgb(3, 3, 3);
+}
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background: rgb(3, 3, 3);
+}
+
+/* End _ Gallery */
+
+.amplop .title {
+    font-family: "Font External";
+    font-size: 45px;
+    letter-spacing: 4px;
+}
+
+#ucapkan .title-section {
+    font-family: "Font External";
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: rgb(117, 124, 124) !important;
+    padding-top: 9px;
+}
+
+.footer-logo img {
+    max-width: 220px;
+    margin-top: 35px;
+}
+
+.footer-logo p {
+    font-family: "Font External";
+    font-size: 20px;
+    color: rgb(117, 124, 124) !important;
+}
+
+.footer-logo .judul {
+    font-family: "Font External";
+    font-size: 35px;
+    margin-top: 29px;
+    color: rgb(117, 124, 124);
+}
+
+.footer .copyright {
+    font-family: Verdana !important;
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .profile::after {
+        height: 100%;
+        width: 100%;
+        top: 20px;
+        background-image: linear-gradient(to top, rgb(3, 3, 3), rgba(3, 3, 3, 0.993), rgba(43, 39, 28, 0.233), rgba(0, 0, 0, 0));
+    }
+
+    .container .info-panel {
+        margin: 30px 233px 20px;
+        width: 900px;
+        height: 120px;
+    }
+
+    .container .info-panel .logo {
+        font-size: 50px;
+    }
+    
+    .container .title {
+        font-size: 53px;
+        top: 600px;
+        width: 900px;
+        letter-spacing: 9px;
+    }
+
+    .container .title:hover {
+        font-size: 55px;
+        cursor: pointer;
+    }
+
+    .container .sub-title {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .container .date {
+        font-size: 20px;
+
+    }
+
+    .date-time span {
+        height: 70px;
+        width: 130px;
+        margin: 10px;
+        font-size: 18px;
+        border-radius: 19px;
+    }
+
+    section .card .judul {
+        font-family: "Font External";
+        font-style: italic;
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+
+    .maps {
+        height: 400px;
+        border: 2px solid rgb(27, 24, 19);
+    }
+
+    .quote {
+        height: 190px;
+    }
+
+    .quote p {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    /* .gallery  */
+    .gallery {
+        height: 700px;
+    }
+
+    .gallery .heading-foto {
+        height: 550px;
+    }
+
+    .gallery .slide img {
+        width: 500px;
+        margin: 13px 10px 0 -5px;
+    }
+
+    .navigation-manual {
+        width: 600px;
+        margin-top: -65px;
+    }
+    .navigation-auto {
+        margin-top: 482.5px;
+    }
+
+    /* UCAPAN */
+    #ucapkan .title-section {
+        font-family: "Font External";
+        font-size: 56px;
+        letter-spacing: 7px;
+    }
+
+    .footer-logo img {
+        max-width: 340px;
+    }
+
+    .footer-logo p {
+        font-size: 24px;
+    }
+
+    .footer-logo .judul {
+        letter-spacing: 4px;
+        font-size: 45px;
+    }
+}
